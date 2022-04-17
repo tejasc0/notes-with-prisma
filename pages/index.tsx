@@ -54,7 +54,7 @@ const Home = ({ notes }: Notes) => {
 
   async function deleteNote(id: string) {
     try {
-      fetch(`http://localhost:3000/api/note/${id}`, {
+      fetch(`https://notes-with-prisma.vercel.app/api/note/${id}`, {
         headers: {
           "Content-Type": "application/json",
         },
